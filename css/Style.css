@@ -1,0 +1,106 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    height: 150px;
+    background-color: #ffffff;
+    color: black;
+ background-image: url(logo.jpg);
+  background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 200pt;
+    text-align: center;
+}
+
+nav {
+    background-color: #fff5f6;
+    color: white;
+    text-align: center;
+
+}
+ul{
+        color: white;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        list-style: none;
+        padding: 7pt;
+        margin: 0;
+}
+
+
+article {
+    display: flex;
+    flex: 1;
+}
+.logo_tittle{
+    position: absolute;
+    font: 20pt sans-serif;
+    font-style: italic;
+    font-family: Georgia;
+    text-align: center;
+    width: 65%;
+    top: 5%;
+    left: 16.5%;
+     color: #000000;
+}
+#content {
+    flex: 1;
+    min-height: 400px;
+    background-color: #f1d0d5;
+    padding: 1em;
+ font: normal 18pt Arial;
+}
+
+#sidebar { 
+
+ flex-basis: 20%;
+    min-height: 300px;
+    background-color: #f1d0d5;
+    padding: 1em;
+ text-align:center; 
+
+}
+.doptxt
+{
+margin-top:200px;
+}
+
+
+footer {
+    height: 100px;
+    background-color: #ffcbd3;
+    color: black;
+    text-align: center;
+}
+
+@media print {
+    body {
+        display: block;
+    }
+
+    header, nav, #sidebar, footer {
+        display: none;
+    }
+}
+@media screen and (max-width:1000px) {
+body {
+display: block;
+}
+
+.logo_tittle {
+display: none;
+}
+}
+@media screen and (min-width:3000px) {
+
+.logo_tittle {
+display: none;
+}
+}
